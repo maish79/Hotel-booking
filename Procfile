@@ -1,1 +1,1 @@
-web: gunicorn main-booking.wsgi
+web: gunicorn hotelapp.wsgi
