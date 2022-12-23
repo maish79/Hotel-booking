@@ -4,9 +4,9 @@ from django.conf import settings
 # Create your models here.
 class Room(models.Model):
     ROOM_CATEGORIES = (
-            ('single', 'one'),
-            ('double', 'two'),
-            ('family','multi'),
+            ('one', 'single'),
+            ('two', 'double'),
+            ('multi','family'),
     )
     category = models.CharField(choices=ROOM_CATEGORIES, max_length=6)
     number = models.IntegerField()
